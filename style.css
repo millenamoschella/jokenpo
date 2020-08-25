@@ -20,7 +20,10 @@ body {
 
 header {
     margin-top: 20px;
+    text-transform: uppercase;
+
 }
+
 
 .letreiro-jogo {
     color: #c6e2ff;
