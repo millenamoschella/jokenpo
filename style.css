@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+* {
+
+    font-family: 'Concert One',
+        cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.letreiro-jogo {
+    color: #c6e2ff;
+    font-size: 4em;
+    animation: letreiro 0.08s ease-in-out infinite alternate;
+
+}
+
+@keyframes letreiro {
+    from {
+        text-shadow: 0 0 6px #cae4e1eb,
+            0 0 30px #cae4e157,
+            0 0 12px #1e84f285,
+            0 0 21px #1e84f2eb,
+            0 0 34px #1e84f2c7,
+            0 0 54px #1e84f2eb;
+    }
+
+    to {
+        text-shadow: 0 0 6px #cae4e1fa,
+            0 0 30px #cae4e16b,
+            0 0 12px #1e84f294,
+            0 0 22px #1e84f2d6,
+            0 0 38px #1e84f2e0,
+            0 0 60px #1e84f2;
+    }
+}
+
+
+
+/* PLACAR */
+.placarPontos {
+    position: relative;
+    color: #31acff;
+    width: 270px;
+    margin: 35px auto 60px auto;
+    ;
+
+    box-shadow: 0 0px 8px #31acff,
+        0 0px 8px #31acff;
+}
+
+
+#pontuacao {
+    font-size: 3em;
+    border: 3px solid #31acff;
+    width: 270px;
+    height: 90px;
+    padding: 10px;
+}
+
+#pontosUsuarios {
+    padding-right: 20px;
+}
+
+#pontosComputador {
+    padding-left: 20px;
+}
+
+.tagPontos {
+    background-color: #f136c9;
+    padding: 5px;
+    font-weight: 500;
+    width: 60px;
+    text-shadow: -1px 1px 1px #5f004b;
+}
+
+#tagUsuario {
+    position: absolute;
+    top: 35px;
+    left: -25px;
+}
+
+#tagComputador {
+    position: absolute;
+    top: 35px;
+    right: -25px;
+}
+
+/* RESULTADO */
+.resultadoJogo {
+    color: #f136c9;
+    font-size: 2.2em;
+}
+
+/* JOGADAS IMAGENS */
+.jogadasImagem {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border: 2px solid #f136c9;
+
+    box-shadow: 0 0px 8px #f136c9,
+        0 0px 8px #f136c9;
+}
+
+hr {
+    box-shadow: 0 0px 8px #f136c9,
+        0 0px 8px #f136c9;
+}
+
+.resultadoJogo p {
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.resultadoJogoComputador,
+.resultadoJogoUsuario {
+    color: #31acff;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.resultadoJogoComputador img,
+.resultadoJogoUsuario img {
+    width: 80px;
+}
+
+.resultadoJogoComputador p,
+.resultadoJogoUsuario p {
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+.resultadoJogoUsuario p {
+    float: left;
+}
+
+.resultadoJogoUsuario img {
+    float: right;
+}
+
+.resultadoJogoComputador p {
+    float: right;
+}
+
+.resultadoJogoComputador img {
+    float: left;
+}
+
+
+
+/* BOTÕES */
+.buttons {
+    padding: auto;
+    margin-top: 50px;
+}
+
+.buttons img {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+    background-color: #31acff;
+    border: 3px solid #f136c9;
+    border-radius: 50%;
+    padding: 10px;
+
+    box-shadow: 0 0px 8px #31acff,
+        0 0px 8px #31acff;
+}
+
+.buttons img:hover {
+    background-color: #70c4fc;
+}
+
+.buttons img:active {
+    border: 3px solid #f136c9;
+}
